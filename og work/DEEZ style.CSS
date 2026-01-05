@@ -1,0 +1,37 @@
+body { font-family: sans-serif ;
+      background-image:url(https://img.freepik.com/free-vector/blue-geometric-frame-vector_53876-140352.jpg?t=st=1725112520~exp=1725116120~hmac=660237a9ff9df984f09d3b9367b3a22b38e593d251249c690e898fb7d21be392&w=900);
+      padding: 20px;}
+ h1, p, h2{text-align: center;}
+ .PS, .game{text-align: left;
+      width: 50%}
+ .price{text-align: right;
+width: 50%;}
+.item p{display: inline-block;
+margin-top: 10px;
+margin-bottom: 15px;
+font-size: 15px}
+.details {background-color: rgb(0, 195, 255);
+width: 80%;
+margin-left: auto;
+   margin-right: auto;
+padding: 20px;
+max-width: 500px;
+}
+h1, h2 {font-family: impact,serif}
+.established{font-style:italic}
+h1{font-size: 30px;
+margin-top: 0;
+margin-bottom: 0;}
+h2{font-size: 20px}
+hr{height: 3px;
+background-color: white;
+border-color:white}
+.bottom-line{margin-top: 5px}
+footer {font-size: 14px;}
+a {color: purple}
+a:visited {color: burlywood}
+a:hover{ color: black;}
+img {width: 10%;
+display: block;
+margin: auto;
+margin-top: -15px;}

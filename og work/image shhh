@@ -1,0 +1,83 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import pdfjsLib from "pdfjs-dist";
+import ssim from "ssim.js";
+
+export default function PDFImageMatcher() {
+  const [pdfImages, setPdfImages] = useState([]);
+  const [uploadedImage, setUploadedImage] = useState(null);
+  const [closestImage, setClosestImage] = useState(null);
+
+  async function extractImagesFromPDF(file) {
+    const reader = new FileReader();
+    reader.onload = async function () {
+      const pdf = await pdfjsLib.getDocument({ data: new Uint8Array(reader.result) }).promise;
+      const images = [];
+      
+      for (let i = 1; i <= pdf.numPages; i++) {
+        const page = await pdf.getPage(i);
+        const operatorList = await page.getOperatorList();
+        
+        for (let j = 0; j < operatorList.fnArray.length; j++) {
+          if (operatorList.fnArray[j] === pdfjsLib.OPS.paintImageXObject) {
+            const imageName = operatorList.argsArray[j][0];
+            const image = await page.objs.get(imageName);
+            if (image) images.push(image);
+          }
+        }
+      }
+      setPdfImages(images);
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  function handlePDFUpload(event) {
+    if (event.target.files.length > 0) {
+      extractImagesFromPDF(event.target.files[0]);
+    }
+  }
+
+  function handleImageUpload(event) {
+    if (event.target.files.length > 0) {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        setUploadedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
+  async function findClosestMatch() {
+    if (!uploadedImage || pdfImages.length === 0) return;
+    let bestMatch = null;
+    let highestSSIM = 0;
+    
+    for (let img of pdfImages) {
+      const similarity = ssim.compare(uploadedImage, img);
+      if (similarity > highestSSIM) {
+        highestSSIM = similarity;
+        bestMatch = img;
+      }
+    }
+    setClosestImage(bestMatch);
+  }
+
+  return (
+    <div className="p-6 space-y-4">
+      <h1 className="text-2xl font-bold">PDF Image Matcher</h1>
+      <Input type="file" accept="application/pdf" onChange={handlePDFUpload} />
+      <Input type="file" accept="image/*" onChange={handleImageUpload} />
+      <Button onClick={findClosestMatch}>Find Closest Image</Button>
+      {closestImage && (
+        <Card>
+          <CardContent>
+            <img src={closestImage} alt="Closest Match" className="rounded-lg shadow-md" />
+          </CardContent>
+        </Card>
+      )}
+    </div>
+  );
+}
