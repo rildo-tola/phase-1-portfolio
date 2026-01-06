@@ -6,6 +6,16 @@ body {
 }
 header{
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: coumn;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #ffffff;       
+  color: rgb(0, 0, 0);                    
+  text-align: center;              
+  border-radius: 0 0 10px 10px;    
+  margin-bottom: 40px;
 }
 
 section{
