@@ -1,9 +1,17 @@
+* { /* css reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;  /* sets default font */
   margin: 0;
   padding: 40px;                   /* space around content */
-  background-color: #f4f4f4
+  background-color: #f4f4f4;
+  color: #333;
 }
+
 header{
   margin-bottom: 40px;
   display: flex;
