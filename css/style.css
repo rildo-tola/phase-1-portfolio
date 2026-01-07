@@ -42,6 +42,7 @@ h1,h2{
 
 .projects-grid {
   display: flex;
+  
   gap: 20px;
   justify-content: center;
 }
