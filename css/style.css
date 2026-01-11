@@ -131,3 +131,13 @@ section.active {
   border-left: 4px solid #4f46e5;
   padding-left: 1rem;
 }
+
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;      /* Removes the bullet points */
+  padding: 0;              /* Removes default browser padding */
+  margin: 0;
+  justify-content: center
+}
