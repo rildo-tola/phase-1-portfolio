@@ -22,3 +22,32 @@ nameHeading.textContent = newText
 nameHeading.textContent = ogText
   }
 });
+
+const projects = [
+  {
+title : "Responsive Portfolio",
+description: "A mobile-first personal portfolio built with HTML, CSS, and JS. "
+},
+{
+    title: "Flexbox Grid Project",
+    description: "A layout project demonstrating modern CSS Flexbox techniques."
+},
+{
+    title: "JavaScript Interaction Demo",
+    description: "A simple interactive page using DOM manipulation and events."
+}
+];
+
+const projectContainer = document.querySelector("#projectsContainer");
+
+projects.forEach((project) => {
+const projectCard = document.createElement("div");
+projectCard.classList.add("project");
+
+projectCard.innerHTML = `
+<h3>${project.title}</h3>
+<p>${project.description}</p>
+`;
+
+projectsContainer.appendChild(projectCard);
+});
