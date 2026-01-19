@@ -34,7 +34,8 @@ features: [
     ],
     tech: "HTML, CSS, JavaScript",
     live: "https://rildo-tola.github.io/study-task-tracker/",
-    github: "https://github.com/rildo-tola"
+    github: "https://github.com/rildo-tola",
+    image: "images/portfolio.png"
   },
 {
     title: "Task Tracker",
@@ -48,7 +49,8 @@ features: [ "Add and delete tasks",
 ],
 tech: "HTML, CSS, JavaScript",
 live: "https://rildo-tola.github.io/study-task-tracker/",
-github:"https://github.com/rildo-tola"
+github:"https://github.com/rildo-tola",
+image: "images/task-tracker.png"
   }
 
 ];
@@ -70,7 +72,9 @@ projectCard.innerHTML = `
 
     <a href="${project.live}" target="_blank">Live Demo</a> |
     <a href="${project.github}" target="_blank">GitHub Repo</a>
-`;
+<img src="${project.image}" alt="${project.title} screenshot">
+
+    `;
 
 projectsContainer.appendChild(projectCard);
 });
