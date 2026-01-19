@@ -26,19 +26,34 @@ nameHeading.textContent = ogText
 const projects = [
   {
 title : "Responsive Portfolio",
-description: "A mobile-first personal portfolio built with HTML, CSS, and JS. "
-},
+description: "A mobile-first personal portfolio built with HTML, CSS, and JS. ",
+features: [
+      "Responsive layout",
+      "Clean navigation",
+      "Project showcase section"
+    ],
+    tech: "HTML, CSS, JavaScript",
+    live: "https://rildo-tola.github.io/study-task-tracker/",
+    github: "https://github.com/rildo-tola"
+  },
 {
-    title: "Flexbox Grid Project",
-    description: "A layout project demonstrating modern CSS Flexbox techniques."
-},
-{
-    title: "JavaScript Interaction Demo",
-    description: "A simple interactive page using DOM manipulation and events."
-}
+    title: "Task Tracker",
+    description: "A simple and user-friendly task management application built with vanilla Javascript",
+features: [ "Add and delete tasks",
+  "Mark tasks as completed",
+  "Persistent storage with localStorage",
+  "Task counter",
+  "Keyboard support",
+  "Accessible UI with subtle animations"
+],
+tech: "HTML, CSS, JavaScript",
+live: "https://rildo-tola.github.io/study-task-tracker/",
+github:"https://github.com/rildo-tola"
+  }
+
 ];
 
-const projectContainer = document.querySelector("#projectsContainer");
+const projectsContainer = document.querySelector("#projectsContainer");
 
 projects.forEach((project) => {
 const projectCard = document.createElement("div");
@@ -47,10 +62,18 @@ projectCard.classList.add("project");
 projectCard.innerHTML = `
 <h3>${project.title}</h3>
 <p>${project.description}</p>
+<ul>
+      ${project.features.map(feature => `<li>${feature}</li>`).join("")}
+    </ul>
+
+    <p><strong>Built with:</strong> ${project.tech}</p>
+
+    <a href="${project.live}" target="_blank">Live Demo</a> |
+    <a href="${project.github}" target="_blank">GitHub Repo</a>
 `;
 
 projectsContainer.appendChild(projectCard);
-});1`1`
+});
 
 const sections = document.querySelectorAll("section");
 
