@@ -50,6 +50,7 @@ p{
 h1,h2{
   color: #333;
   text-align: center;
+   padding: 20px;
 }
 
 h1,h2,h3 {
@@ -183,3 +184,30 @@ section.active {
     opacity: 1;
   }
 }
+
+a:focus,
+button:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+a,
+button {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a:hover,
+button:hover {
+  transform: translateY(-2px);
+}
+
+a:active,
+button:active {
+  transform: scale(0.97);
+}
+
+.project {
+  cursor: pointer;
+}
+
+

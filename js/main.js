@@ -26,30 +26,30 @@ nameHeading.textContent = ogText
 const projects = [
   {
 title : "Responsive Portfolio",
-description: "A mobile-first personal portfolio built with HTML, CSS, and JS. ",
+description: "A mobile-first personal portfolio website designed to showcase projects, skills, and contact information in a clean and accessible way. Built with vanilla web technologies, focusing on responsiveness, usability, and maintainable code. ",
 features: [
-      "Responsive layout",
-      "Clean navigation",
-      "Project showcase section"
+      "Fully responsive layout using mobile-first design principles",
+      "Clean and intuitive navigation across all screen sizes",
+      "Organized folder structure and eusable styles"
     ],
     tech: "HTML, CSS, JavaScript",
     live: "https://rildo-tola.github.io/study-task-tracker/",
-    github: "https://github.com/rildo-tola",
+    github: "https://github.com/rildo-tola/phase-1-portfolio",
     image: "images/portfolio.png"
   },
 {
     title: "Task Tracker",
-    description: "A simple and user-friendly task management application built with vanilla Javascript",
-features: [ "Add and delete tasks",
-  "Mark tasks as completed",
+    description: "A lightweight task management application built with vanilla JavaScript, focused on simplicity, accessibility, and smooth user interaction. Designed to help users manage daily tasks efficiently without external libraries. ",
+features: [ "Add and delete tasks with instant UI updates",
+  "Mark tasks as completed with visual feedback",
   "Persistent storage with localStorage",
-  "Task counter",
-  "Keyboard support",
-  "Accessible UI with subtle animations"
+  "Real-time task counter for better progress tracking",
+  "Full keyboard support for improved accessibility",
+  "Subtle animations to enhance user experience"
 ],
 tech: "HTML, CSS, JavaScript",
 live: "https://rildo-tola.github.io/study-task-tracker/",
-github:"https://github.com/rildo-tola",
+github:"https://github.com/rildo-tola/study-task-tracker",
 image: "images/task-tracker.png"
   }
 
