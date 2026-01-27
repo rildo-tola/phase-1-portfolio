@@ -1,8 +1,10 @@
 console.log("Portfolio loaded");  // test that JS is working
 console.log("JavaScript is connected");
 
+// creating the Heading constant
 const nameHeading = document.querySelector("#name");
 
+//changing the heading 
 nameHeading.textContent = "Rildo Tola - Front-End Developer";
 
 const ogText = "Rildo Tola - Front-End Developer";
@@ -23,6 +25,7 @@ nameHeading.textContent = ogText
   }
 });
 
+// project objects
 const projects = [
   {
 title : "Responsive Portfolio",
@@ -55,8 +58,10 @@ image: "images/task-tracker.png"
 
 ];
 
+// stating project container
 const projectsContainer = document.querySelector("#projectsContainer");
 
+// loads projects into project card div
 projects.forEach((project) => {
 const projectCard = document.createElement("div");
 projectCard.classList.add("project");
@@ -76,6 +81,7 @@ projectCard.innerHTML = `
 
     `;
 
+    // load project cards to project container
 projectsContainer.appendChild(projectCard);
 });
 
