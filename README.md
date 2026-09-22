@@ -1,12 +1,12 @@
-Responsive Portfolio 💻
+# Responsive Portfolio 💻
 
 A personal portfolio website built from scratch with HTML, CSS, and JavaScript to showcase my projects, skills, and contact information.
 
-Live Demo
+## Live Demo
 
 [View My Portfolio](https://rildo-tola.github.io/phase-1-portfolio/)
 
-Features
+## Features
 
 * Responsive layout for different screen sizes
 * About Me section
@@ -18,7 +18,7 @@ Features
 * Clean and simple navigation
 * Organized project structure
 
-Built With
+## Built With
 
 * HTML5
 * CSS3
@@ -26,25 +26,25 @@ Built With
 * Git
 * GitHub Pages
 
-About the Project
+## About the Project
 
 This project was built as part of my front-end development learning journey.
 
 The goal was to create a simple personal website while practicing the fundamentals of web development and learning how HTML, CSS, and JavaScript work together to create an interactive website.
 
-Getting Started
+## Getting Started
 
-1. Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/rildo-tola/phase-1-portfolio.git
 ```
 
-2. Open the project
+### 2. Open the project
 
 Open the project folder in your code editor.
 
-3. Run the website
+### 3. Run the website
 
 Open:
 
@@ -54,7 +54,7 @@ index.html
 
 in your browser.
 
-Project Structure
+## Project Structure
 
 ```text
 phase-1-portfolio/
@@ -67,7 +67,7 @@ phase-1-portfolio/
 └── README.md
 ```
 
-What I Learned
+## What I Learned
 
 This project helped me improve my understanding of:
 
@@ -81,7 +81,7 @@ This project helped me improve my understanding of:
 * Using Git and GitHub for version control
 * Deploying a website with GitHub Pages
 
-Future Improvements
+## Future Improvements
 
 Possible future improvements include:
 
