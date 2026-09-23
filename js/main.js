@@ -58,7 +58,7 @@ live: "https://rildo-tola.github.io/study-task-tracker/",
 github:"https://github.com/rildo-tola/study-task-tracker",
 image: "images/task-tracker.png"
   },
-  
+
   {
 title : "Responsive Portfolio",
 description: "A mobile-first personal portfolio website designed to showcase projects, skills, and contact information in a clean and accessible way. Built with vanilla web technologies, focusing on responsiveness, usability, and maintainable code. ",
@@ -68,7 +68,7 @@ features: [
       "Organized folder structure and eusable styles"
     ],
     tech: "HTML, CSS, JavaScript",
-    live: "https://rildo-tola.github.io/study-task-tracker/",
+    live: "https://rildo-tola.github.io/phase-1-portfolio/",
     github: "https://github.com/rildo-tola/phase-1-portfolio",
     image: "images/portfolio.png"
   },
