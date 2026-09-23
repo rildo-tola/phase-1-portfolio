@@ -28,18 +28,21 @@ nameHeading.textContent = ogText
 // project objects
 const projects = [
   {
-title : "Responsive Portfolio",
-description: "A mobile-first personal portfolio website designed to showcase projects, skills, and contact information in a clean and accessible way. Built with vanilla web technologies, focusing on responsiveness, usability, and maintainable code. ",
+title : "Weather app",
+description: "Built a weather application using HTML, CSS, and JavaScript that retrieves weather information from the OpenWeather API. Implemented city search, dynamic weather information, loading/error states, weather icons, and condition-based interface changes. ",
 features: [
-      "Fully responsive layout using mobile-first design principles",
-      "Clean and intuitive navigation across all screen sizes",
-      "Organized folder structure and eusable styles"
+      "Live OpenWeather API data (temperature in °C, descriptions, and dynamic icons) via city search.",
+      "Asynchronous API requests (fetch, async/await) with robust try/catch error handling.",
+      "Seamless DOM updates with smart inputs (Enter-key support, validation, auto-clear, and loading states).",
+      "Dynamic backgrounds and color themes that adapt to weather, temperature, and day/night cycles.",
+      "Smooth UI transitions, fade-in animations, and clear error messaging."
     ],
-    tech: "HTML, CSS, JavaScript",
-    live: "https://rildo-tola.github.io/study-task-tracker/",
-    github: "https://github.com/rildo-tola/phase-1-portfolio",
-    image: "images/portfolio.png"
+    tech: "HTML5, CSS3, JavaScript, REST APIs",
+    live: "https://rildo-tola.github.io/weather-app/",
+    github: "https://github.com/rildo-tola/weather-app",
+    image: "images/weather-app.png"
   },
+
 {
     title: "Task Tracker",
     description: "A lightweight task management application built with vanilla JavaScript, focused on simplicity, accessibility, and smooth user interaction. Designed to help users manage daily tasks efficiently without external libraries. ",
@@ -54,7 +57,22 @@ tech: "HTML, CSS, JavaScript",
 live: "https://rildo-tola.github.io/study-task-tracker/",
 github:"https://github.com/rildo-tola/study-task-tracker",
 image: "images/task-tracker.png"
-  }
+  },
+  
+  {
+title : "Responsive Portfolio",
+description: "A mobile-first personal portfolio website designed to showcase projects, skills, and contact information in a clean and accessible way. Built with vanilla web technologies, focusing on responsiveness, usability, and maintainable code. ",
+features: [
+      "Fully responsive layout using mobile-first design principles",
+      "Clean and intuitive navigation across all screen sizes",
+      "Organized folder structure and eusable styles"
+    ],
+    tech: "HTML, CSS, JavaScript",
+    live: "https://rildo-tola.github.io/study-task-tracker/",
+    github: "https://github.com/rildo-tola/phase-1-portfolio",
+    image: "images/portfolio.png"
+  },
+
 
 ];
 
